@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adventure Alegiance</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		nav {
+			background-color: #f2f2f2;
+			padding: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		nav li a {
+			display: block;
+			color: #333;
+			padding: 10px 20px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+        nav li a:hover {
+            background-color:#333; 
+            color:#fff; 
+        }
+        nav li a.active {
+            background-color:#333; 
+            color:#fff; 
+        }
+        main {
+            padding :20px; 
+        }
+        h1 {
+            font-size :36px; 
+            margin-bottom :20px; 
+        }
+        p {
+            font-size :18px; 
+            line-height :1.5em; 
+            margin-bottom :20px; 
+        }
+        form {
+            margin-top :20px; 
+            padding-top :20px; 
+            border-top-style:solid; 
+            border-top-width :thin; 
+            border-top-color :#333; 
+        }
+        label {
+            display:block; 
+            margin-bottom:.5em; 
+            font-size :18px; 
+            font-weight:bold; 
+        }
+        input[type=\"text\"], input[type=\"email\"], select, textarea {
+            width :100%; 
+            padding:.5em; 
+            margin-bottom:.5em; 
+            font-size :18px; 
+            border-radius :5px; 
+            border-style:none; 
+            background-color:#f2f2f2; 
+        }
+        input[type=\"submit\"] {
+            background-color:#333; 
+            color:#fff; 
+            padding:.5em 1em; 
+            font-size :18px; 
+            border-radius :5px; 
+            border-style:none; 
+        }
+        input[type=\"submit\"]:hover {
+            background-color:#fff; 
+            color:#333; 
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Adventure Alegience</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <form action="#" method="get">
+        <input type="text" name="search" placeholder="Search...">
+        <input type="submit" value="Search">
+    </form>
+</nav>
+
+<main>
+    
+    <table style="width:100%">
+      <tr>
+        <th>Product Image</th>
+        <th>Product Name</th>  
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td><img src="Bungee-jumping.webp" alt="bungee jumping Image" width="300" height="250"></td>
+        <td>Bungee jumping</td>  
+        <td>$199.99</td>
+      </tr>
+      <tr>
+        <td><img src="Rafting...webp" alt="rafting image" width="300" height="250"></td>
+        <td>River rafting</td>  
+        <td>$399.99</td>
+      </tr>
+      <tr>
+        <td><img src="Rock-climbing-1024x683.webp" alt="rock climbing Image" width="300" height="250"></td>
+        <td>Rock Climbing</td>  
+        <td>$499.99</td>
+      </tr>
+      <tr>
+        <td><img src="Skiing-768x433.webp" alt="skiing Image" width="300" height="250"></td>
+        <td>Skiing</td>  
+        <td>$599.99</td>
+      </tr>
+    </table>
+    <footer>
+        ©2023 Adventure Alegience
+    </footer>
+</html>

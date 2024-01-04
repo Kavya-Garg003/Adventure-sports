@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adventure Alegience</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		nav {
+			background-color: #f2f2f2;
+			padding: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		nav li a {
+			display: block;
+			color: #333;
+			padding: 10px 20px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		main {
+			padding: 20px;
+		}
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 18px;
+			line-height: 1.5em;
+			margin-bottom: 20px;
+		}
+		form {
+            margin-top: 20px; 
+            padding-top: 20px; 
+            border-top-style:solid; 
+            border-top-width:thin; 
+            border-top-color:#333; 
+        }
+        label {
+            display:block; 
+            margin-bottom:.5em; 
+            font-size:18px; 
+            font-weight:bold; 
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width :100%; 
+            padding:.5em; 
+            margin-bottom:.5em; 
+            font-size :18px; 
+            border-radius :5px; 
+            border-style:none; 
+            background-color:#f2f2f2; 
+        }
+        input[type="submit"] {
+            background-color:#333; 
+            color:#fff; 
+            padding:.5em 1em; 
+            font-size :18px; 
+            border-radius :5px; 
+            border-style:none; 
+        }
+        input[type="submit"]:hover {
+            background-color:#fff; 
+            color:#333; 
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Adventure Alegiance</h1>
+    <h4>Outdor Adventure Services</h4>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <form action="#" method="get">
+        <input type="text" name="search" placeholder="Search...">
+        <input type="submit" value="Search">
+    </form>
+</nav>
+
+<main>
+    <img src="Screenshot 2023-11-03 104807.png">
+    <h2>Welcome to our online store!</h2>
+
+    <p>We offer a wide range of adventure services at affordable prices. Our products include River Rafting,Bungee Jumping , Skiing, and more. We are committed to providing our customers with the best experience possible.</p>
+
+    <p>Our website is easy to navigate and our checkout process is simple and secure. We accept all major credit cards and offer free meals on packages over $500.</p>
+
+    <p>Thank you for choosing our online store for all your shopping needs!</p>
+
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject">
+          <option value="">--Please choose an option--</option>
+          <option value="Order Inquiry">Order Inquiry</option>
+          <option value="Product Inquiry">Product Inquiry</option>
+          <option value="Technical Support">Technical Support</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+</main>
+
+<footer>
+    ©2023 Adventure Alegiance
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us | E-commerce Website</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		nav {
+			background-color: #f2f2f2;
+			padding: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		nav li a {
+			display: block;
+			color: #333;
+			padding: 10px 20px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+        nav li a:hover {
+            background-color:#333; 
+            color:#fff; 
+        }
+        nav li a.active {
+            background-color:#333; 
+            color:#fff; 
+        }
+        main {
+            padding :20px; 
+        }
+        h1 {
+            font-size :36px; 
+            margin-bottom :20px; 
+        }
+        p {
+            font-size :18px; 
+            line-height :1.5em; 
+            margin-bottom :20px; 
+        }
+        form {
+            margin-top :20px; 
+            padding-top :20px; 
+            border-top-style:solid; 
+            border-top-width :thin; 
+            border-top-color :#333; 
+        }
+        label {
+            display:block; 
+            margin-bottom:.5em; 
+            font-size :18px; 
+            font-weight:bold; 
+        }
+        input[type=\"text\"], input[type=\"email\"], select, textarea {
+            width :100%; 
+            padding:.5em; 
+            margin-bottom:.5em; 
+            font-size :18px; 
+            border-radius :5px; 
+            border-style:none; 
+            background-color:#f2f2f2; 
+        }
+        input[type=\"submit\"] {
+            background-color:#333; 
+            color:#fff; 
+            padding:.5em 1em; 
+            font-size :18px; 
+            border-radius :5px; 
+            border-style:none; 
+        }
+        input[type=\"submit\"]:hover {
+            background-color:#fff; 
+            color:#333; 
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <form action="#" method="get">
+        <input type="text" name="search" placeholder="Search...">
+        <input type="submit" value="Search">
+    </form>
+</nav>
+
+<main>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>BUY YOUR PACKAGE</legend>
+        
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="file">Upload valid Identity Proof:</label>
+      <input type="file" id="file" name="file" required>
+
+      <br>
+      <h4>Enter the Number of People </h4>
+        <input type = "radio" name = "individual"
+        value = "individual" checked ="checked">1
+        <input type = "radio" name = "couple"
+        value = "Couple">2
+        <input type = "radio" name = "more than 2"
+        value = "3-5">3-5
+        <input type = "radio" name = "more than 5"
+        value = ">5">more than 5
+        <br>
+
+        <br>
+        <h4>Age group</h4>
+        <input type = "radio" name = "age"
+        value = "under20" checked ="checked">0-19
+        <input type = "radio" name = "age"
+        value = "20-35">20-35
+        <input type = "radio" name = "age"
+        value = "36-50">36-50
+        <input type = "radio" name = "age"
+        value = "over50">over 50
+        <br>
+
+      <label for="package">Choose a package:</label>
+      <select id="text" name="package">
+          <option value="">--Please choose an option--</option>
+          <option value="River rafting">River rafting</option>
+          <option value="Bungee jumping">Bungee jumping</option>
+          <option value="Skinng">Skiing</option>
+          <option value="Rock climbing">rock Climbing</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+      <input type="submit" value="Submit">
+
+      </fieldset>
+
+    </form>
+
+</main>
+
+<footer>
+    ©2023 Adventure Alegience
+</footer>
+
+</body></html>
